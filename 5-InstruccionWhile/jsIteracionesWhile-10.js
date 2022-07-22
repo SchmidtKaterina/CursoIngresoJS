@@ -1,4 +1,6 @@
 /*
+Schmidt, Katerina DIV Z
+Ejercicio WHILE 10
 Al presionar el botón pedir  números  
 hasta que el usuario quiera, mostrar:
 1-Suma de los negativos.

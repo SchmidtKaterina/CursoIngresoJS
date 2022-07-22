@@ -1,5 +1,7 @@
 /*
-al presionar el botón 
+Schmidt, Katerina DIV Z
+Ejercicio WHILE 04
+Al presionar el botón 
 pedir un número entre 0 y 9 inclusive.*/
 function mostrar()
 {
