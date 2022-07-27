@@ -16,30 +16,62 @@ function mostrar()
 {
 	var estacionIngresada;
 	var destinoIngresado;
-	var descuento;
-	var aumento;
+	var precioBase = 15000;
+	var descuento = 0;
+	var aumento = 0;
 	var precioFinal;
-	var mensaje;
 
 	estacionIngresada = txtIdEstacion.value;
 	destinoIngresado = txtIdDestino.value;
-
-	precio = 15000;
-	aumento = 0;
-	descuento = 0
-
+	
 	switch(estacionIngresada)
 	{
+		case "Invierno":
+			switch(destinoIngresado)
+			{
+				case "Bariloche":
+					aumento = 20;
+				break;
+
+				case "Mar del plata":
+					descuento = 20;
+				break;
+
+				default: //Cataratas y Cordoba
+					descuento = 10;
+				break;
+			}
+		break;
+
 		case "Verano":
 			switch(destinoIngresado)
 			{
 				case "Bariloche":
+					descuento = 20;
 				break;
-				case "":
+
+				case "Mar del plata":
+					aumento = 20;
+				break;
+
+				default: //Cataratas y Cordoba
+					aumento = 10;
 				break;
 			}
 		break;
-	}
 
-	alert(estacionIngresada);
+		default: //Otoño y Primavera
+			switch(destinoIngresado)
+			{
+				case "Bariloche":
+				case "Cataratas":
+				case "Mar del plata":
+					aumento = 10;
+				break;
+			}
+		break;	
+	}
+	precioFinal = precioBase + (precioBase * aumento / 100) - (precioBase * descuento / 100);
+
+	alert("El precio final por ir a " + destinoIngresado + " en " + estacionIngresada + " es de $" + precioFinal);
 }

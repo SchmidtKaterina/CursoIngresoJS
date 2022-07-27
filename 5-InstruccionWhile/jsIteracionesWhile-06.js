@@ -6,14 +6,18 @@ informar la suma acumulada y el promedio.
 */
 function mostrar()
 {
-	var contador;
-	var acumulador;
 	var numeroIngresado;
+	var i = 0;
+	var acumulador = 0;
 
-	contador=0;
-	acumulador=0;
-	
-	
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/5;
-}//FIN DE LA FUNCIÓN
+	while(i < 5)
+	{
+		numeroIngresado = prompt("Ingrese un número.");
+		numeroIngresado = parseInt(numeroIngresado);
+		acumulador = acumulador + numeroIngresado;
+		i = i + 1;
+	}
+
+	txtIdSuma.value = acumulador;
+	txtIdPromedio.value = acumulador / 5;
+}

@@ -6,7 +6,22 @@ si hace FRIO o CALOR en ese destino.
 */
 function mostrar()
 {
-	var destinoIngresado =txtIdDestino.value;
-	alert(destinoIngresado);
+	var destinoIngresado;
+	var mensaje;
 
-}//FIN DE LA FUNCIÓN
+	destinoIngresado = txtIdDestino.value;
+
+	switch(destinoIngresado)
+	{
+		case "Bariloche":
+		case "Ushuaia":
+			mensaje = "Aca hace frio.";
+			break;
+
+		case "Cataratas":
+		case "Mar del plata":
+			mensaje = "Aca hace calor.";
+			break;
+	}
+	alert(mensaje);
+}

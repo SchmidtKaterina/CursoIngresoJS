@@ -7,5 +7,13 @@ function mostrar()
 {
 	var numeroIngresado;
 	numeroIngresado = prompt("ingrese un número entre 0 y 10.");
+	numeroIngresado = parseInt(numeroIngresado);
 	
-}//FIN DE LA FUNCIÓN
+	while(numeroIngresado < 0 || numeroIngresado > 9)
+	{
+		numeroIngresado = prompt("Ingrese un número nuevamente.");
+		numeroIngresado = parseInt(numeroIngresado);
+	}
+
+	txtIdNumero.value = numeroIngresado;
+}

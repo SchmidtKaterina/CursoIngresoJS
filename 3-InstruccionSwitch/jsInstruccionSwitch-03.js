@@ -1,4 +1,4 @@
-/*
+ /*
 Schmidt, Katerina
 Ejercicio SWITCH 03
 al seleccionar un mes informar.
@@ -14,7 +14,7 @@ function mostrar()
 
 	switch(mesIngresado)
 	{
-		case"Febrero":
+		case "Febrero":
 			mensaje = "Este mes no tiene más de 29 días.";
 			break;
 

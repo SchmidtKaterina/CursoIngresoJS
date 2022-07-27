@@ -20,6 +20,7 @@ function mostrar()
 		case "Febrero":
 		case "Marzo":
 		case "Abril":
+		case "Mayo":
 		case "Junio":
 			mensaje = "Falta para el invierno.";
 			break;

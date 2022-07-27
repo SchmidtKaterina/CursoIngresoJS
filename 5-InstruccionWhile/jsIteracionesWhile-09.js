@@ -4,13 +4,13 @@ Ejercicio WHILE 09
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
 function mostrar()
-{	// declarar variables
+{	
 	var banderaDelPrimero;
 	var numeroIngresado;
 	var numeroMaximo;
 	var numeroMinimo;
 	var respuesta;
-	//iniciar variables
+	
 	banderaDelPrimero="es el primero";
 	respuesta='si';
 	while(respuesta=="si")
@@ -19,5 +19,17 @@ function mostrar()
 		respuesta=prompt("desea continuar?");
 	}
 	txtIdMaximo.value=numeroMaximo;
-	txtIdMinimmo.value=numeroMinimo;
-}//FIN DE LA FUNCIÓN
+	txtIdMinimo.value=numeroMinimo;
+}
+
+/*
+	declaramos variables
+
+	armo un bucle del tipo mientras el usuario quiera (do while)
+
+	dentro del bucle:
+		pido un numero
+		
+	despues del bucle:
+
+*/
